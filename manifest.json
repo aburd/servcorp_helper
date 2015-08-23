@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Aaron's Servcorp Helper",
+  "description": "Helps me with various stuff in the office.",
+  "version": "1.0",
+  "author":"Aaron Edward Burdick",
+   "background": {
+    "scripts": 
+       [
+           "jquery-1.11.2.min.js", 
+           "background.js", 
+           "deal-maker/comma_adder.js",
+           "deal-maker/dealmaker.js",
+           "mail-gen/mail_gen.js"
+       ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Servcorp Helper"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}

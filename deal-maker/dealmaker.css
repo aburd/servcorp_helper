@@ -1,0 +1,40 @@
+body {
+    background-color: #efefef;
+}
+p {
+    margin: 0;
+    font-size: 13px;
+}
+#wrapper {
+
+    margin: 0 auto;
+}
+.active{
+    background-color: #ffbbbb;
+}
+
+
+#left {
+    margin: 10px;
+    background-color: #efefef;
+}
+
+#right {
+    border-top: dotted 10px black;
+    color: #222222;
+}
+#right p {
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    margin: 20px;
+    color: #222222
+}
+#right h2 {
+    font-size: 20px;
+    margin: 10px;
+}
+#right pre {
+    font-size: 14px;
+    font-family: "Courier New", Courier, monospace;
+    color: #222222;
+}
