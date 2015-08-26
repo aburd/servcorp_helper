@@ -6,43 +6,40 @@
     <script src="jquery-1.11.2.min.js"></script>
         <script src="background.js"></script>
     <style>
+      
+      html {
+        width:180px;
+      }
 
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;;
+        font-size: 100%;
+        margin: 4px;
       }
         .right{ float:right; }
         .left{ float: left; }
 
-        .servcorp-btn {
-            margin: 5px 10px;
-            height: 18px;
-            padding: 15px 18px 0;
-            color: #000;
-            text-align: center;
-            text-shadow: 2px 1px 2px #fff;
-            background: #d8e0de; /* Old browsers */
-            background: -moz-linear-gradient(top, #d8e0de 0%, #aebfbc 22%, #99afab 33%, #8ea6a2 50%, #829d98 67%, #4e5c5a 82%, #0e0e0e 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8e0de), color-stop(22%,#aebfbc), color-stop(33%,#99afab), color-stop(50%,#8ea6a2), color-stop(67%,#829d98), color-stop(82%,#4e5c5a), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(top, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(top, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(top, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%); /* IE10+ */
-            border: 1px solid #888;
-            border-bottom-color: #222;
-            border-top-color: #b0b0b0;
-            border-radius: 6px;
-
-        }
+    .servcorp-btn {
+        height: 10px;
+        padding: 8px 10px 0;
+        color: #444;
+        text-align: center;
+        background: #eee;
+        border: 1px solid #aaa;
+        border-bottom-color: #888;
+        border-top-color: #b0b0b0;
+        border-radius: 2px;
+        font-size: 14px;
+    }
         .servcorp-btn:hover {
           cursor: pointer;
-          box-shadow: 3px 3px 4px #222222;
+          border: 1px solid #bbb;
         }
         .servcorp-btn:active {
-          color: #494949;
-          box-shadow: 0 0 0 #000;
+          border: 1px solid #888;
         }
       div.section {
-        padding: 10px;
+        padding: 1px 10px 10px;
       }
       div.section:nth-child(odd){
         background-color: #ddd;
@@ -57,24 +54,19 @@
       }
 
     </style>
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
-    <script src="popup.js"></script>
+    
   </head>
+  
+
   <body>
+    
     <div id="status">
 
-      <h4>頑張れ、サーブコープ！</h4>
       <div class="section">
         <p>Web Form Tester</p>
-        <div class="servcorp-btn" id="test-all-btn">Test All</div>
-        <div class="servcorp-btn" id="test-vo-signup">Test VO</div>
-        <div class="servcorp-btn" id="test-local-btn">Test Local</div>
+        <div class="servcorp-btn" id="test-all-btn">All</div>
+        <div class="servcorp-btn" id="test-vo-signup">VO</div>
+        <div class="servcorp-btn" id="test-local-btn">Local</div>
       </div>
       <div class="section">
         <p>Monthly Deals</p>
@@ -88,8 +80,11 @@
         <p>Floor Information</p>
         <input type="text" name="Search" value="Search...">
       </div>
-
+      <div class="section">
+          <p id="output"></p>
+      </div>
     </div>
+    
     <img id="image-result" hidden>
 
   </body>

@@ -1,0 +1,199 @@
+{
+    "tokyo":
+    {
+        "marunouchi yusen": 
+        {
+            "manager": 
+            {
+                "name":"Manami Alberto",
+                "email":"malberto@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"",
+                "email":""
+            },
+            "assistant manager": 
+            {
+                "name":"Yume Ishijima",
+                "email":"yishijima@servcorp.co.jp"
+            }
+        },
+        "marunouchi trust tower": 
+        {
+            "manager": 
+            {
+                "name":"Maya Oguri",
+                "email":" moguri@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"Machiko Ishihara",
+                "email":"mishihara@servcorp.co.jp"
+
+            }
+        },
+        "shinjuku nomura": 
+        {
+            "manager": 
+            {
+                "name":"Mari Murata",
+                "email":"mmurata@servcorp.co.jp"
+
+            },
+            "vomanager": 
+            {
+                "name":"",
+                "email":""
+            }
+        },
+        "shinjuku oak city": 
+        {
+            "manager": 
+            {
+                "name":"Sayaka Masaki",
+                "email":"smasaki@servcorp.co.jp"
+            },
+            "vomanager":
+            {
+                "name":"",
+                "email":""
+            }
+        },
+        "hibiya central": 
+        {
+            "manager": 
+            {
+                "name":"Haruko Kurashige",
+                "email":"hkurashige@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"",
+                "email":""
+            }
+        },
+        "aoyama palacio": 
+        {
+            "manager": 
+            {
+                "name":"Aya Komori",
+                "email":"akomori@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"Marice Hartano",
+                "email":"mhartano@servcorp.co.jp"
+            }
+        },
+        "otemachi sankei": 
+        {
+            "manager": 
+            {
+                "name":"Hiroki Nasuhara",
+                "email":"hnasuhara@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"",
+                "email":""
+            }
+        },
+        "shinagawa intercity": 
+        {
+            "manager": 
+            {
+                "name":"Aileen Nakagawa",
+                "email":"anakagawa@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"Mariko Matsubara",
+                "email":"mmatsubara@servcorp.co.jp"
+            }
+        },
+        "shiodome shiba rikyu": 
+        {
+            "manager": 
+            {
+                "name":"Rie Hirano",
+                "email":"rhirano@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"Miyu Tominaga",
+                "email":"mtominaga@servcorp.co.jp"
+            }
+        },
+        "shiroyama trust tower": 
+        {
+            "manager": 
+            {
+                "name":"Hisami Ueda",
+                "email":"hueda@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"",
+                "email":""
+            }
+        },
+        "yebisu garden place tower": 
+        {
+            "manager": 
+            {
+                "name":"Manami Alberto",
+                "email":"malberto@servcorp.co.jp"
+            },
+            "assistant manager": 
+            {
+                "name":"Sayuri Yano",
+                "email":"syano@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"Naka Kobayashi",
+                "email":"nkobayashi@servcorp.co.jp"
+            }
+        },
+        "tokyo big sight ariake frontier": 
+        {
+            "manager": 
+            {
+                "name":"Kumiko Maehara",
+                "email":"kmaehara@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"Yuko Nakajima",
+                "email":"ynakajima@servcorp.co.jp"
+            }
+        },
+        "wakamatsu":
+        {
+            "manager": 
+            {
+                "name":"Sanae Nishizawa",
+                "email":"snishizawa@servcorp.co.jp"
+            },
+            "vomanager": 
+            {
+                "name":"",
+                "email":""
+            }
+        },
+        "ikebukuro sunshine": 
+        {
+            "manager": 
+            {
+                "name":"Seung-yeon Lee",
+                "email":"slee@servcorp.co.jp"
+            },
+            "assistant manager": 
+            {
+                "name":"Hiroko Takahashi",
+                "email":"htakahashi@servcorp.co.jp"
+            }
+        }
+    }
+}

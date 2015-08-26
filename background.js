@@ -1,5 +1,40 @@
 $(document).ready(function(){
 
+var p = document.getElementById('output');
+
+function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        out += '<a href="' + arr[i].url + '">' + 
+        arr[i].display + '</a><br>';
+    }
+    document.getElementById("id01").innerHTML = out;
+}
+
+    var xhr = new XMLHttpRequest();
+    var url = "managers-test.json";
+
+    xhr.onreadystatechange = function() {
+        if(xhr.readyState == 4 && xhr.status == 200){
+            var managersObj = JSON.parse(xhr.responseText);
+            console.log(managersObj.tokyo);
+            showTokyoLocations(managersObj.tokyo);
+        }
+    }
+
+    xhr.open("GET", url, true);
+    xhr.send();
+
+    function showTokyoLocations(object) {
+        var out = "";
+        
+        for(place in object){
+            console.log("The manager of " + place + " is " + object[place].manager.name + ".\n");
+        }
+
+    }
+
     var servcorpUrls = {
     	"all": 
     	[
@@ -25,8 +60,12 @@ $(document).ready(function(){
             "file:///C:/Users/aburdick/Documents/Websites%20Checks/VO_Signup_check/testcarddetails.txt",
     		"https://secure.servcorp.co.jp/?Lang=2&c=JP01&i=0"
         ],
-    	"voSignUp":"https://secure.servcorp.co.jp/?Lang=2&c=JP01&i=0",
-    	"voLandingPage": 
+    	"voSignUp": 
+        [
+            "https://secure.servcorp.co.jp/?Lang=2&c=JP01&i=0",
+            "https://secure.servcorp.co.jp/?Lang=1&c=%270%27"
+        ],
+    	"voLandingPage":
     	[
     		"http://virtualoffice.servcorp.co.jp/popupform/popup.php?lang=ja&enq=yet",
     		"http://virtualoffice.servcorp.co.jp/popupform/popup.php?lang=en&enq=yet",
@@ -65,8 +104,6 @@ $(document).ready(function(){
         chrome.windows.create({ 'url':servcorpUrls.local, 'width':1070 });
     });
     $("#test-vo-signup").click(function(){
-    	chrome.tabs.create({
-    		'url':servcorpUrls.voSignUp
-    	});
+    	chrome.windows.create({ 'url':servcorpUrls.voSignUp, 'width':1000 } );
     });
 });
