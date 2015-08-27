@@ -51,7 +51,7 @@ function myFunction(arr) {
             "http://www.servcorp.co.jp/ja/",
             "http://www.servcorp.co.jp/en/",
             "http://virtualoffice.servcorp.co.jp/",
-            "http://virtualoffice.servcorp.co.jp/",
+            "http://virtualoffice.servcorp.co.jp/osaka/",
             "http://vo30.co.jp/",
             "http://vo30.jp/",
             "http://virtualoffice.co.jp/",
