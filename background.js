@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
 var p = document.getElementById('output');
@@ -46,8 +48,8 @@ function myFunction(arr) {
             "http://www.servcorp.co.jp/en/book-a-meeting-room/",
             "http://virtualoffice.servcorp.co.jp/osaka/popupform/popup.php?lang=en&enq=yet",
             "http://virtualoffice.servcorp.co.jp/osaka/popupform/popup.php?lang=ja&enq=yet",
-            "http://virtualoffice.servcorp.co.jp/popupform/popup.php?lang=ja&enq=yet",
-            "http://virtualoffice.servcorp.co.jp/popupform/popup.php?lang=en&enq=yet",
+            "http://virtualoffice.servcorp.co.jp/popup.php?lang=ja&enq=yet",
+            "http://virtualoffice.servcorp.co.jp/popup.php?lang=en&enq=yet",
             "http://www.servcorp.co.jp/ja/",
             "http://www.servcorp.co.jp/en/",
             "http://virtualoffice.servcorp.co.jp/",
@@ -85,6 +87,41 @@ function myFunction(arr) {
             "http://www.virtualoffice-japan.jp/"
         ]
     };
+    
+    var locationLinks = {
+        "Tokyo":{
+            "Marunouchi Yusen Building":"/locations/tokyo/marunouchi-yusen-building",
+            "Marunouchi Trust Tower - Main":"/locations/tokyo/marunouchi-trust-tower-main",
+            "Otemachi Tokyo Sankei Building":"/locations/tokyo/otemachi-tokyo-sankei-building",
+            "Nihonbashi Wakamatsu Building":"/locations/tokyo/nihonbashi-wakamatsu-building",
+            "Hibiya Central Building":"/locations/tokyo/hibiya-central-building",
+            "Shiodome Shibarikyu Building":"/locations/tokyo/shiodome-shibarikyu-building",
+            "Shiroyama Trust Tower":"/locations/tokyo/shiroyama-trust-tower",
+            "Shinagawa Intercity Tower A":"/locations/tokyo/shinagawa-intercity-tower-a",
+            "Aoyama Palacio Tower":"/locations/tokyo/aoyama-palacio-tower",
+            "Yebisu Garden Place Tower":"/locations/tokyo/yebisu-garden-place-tower",
+            "Shinjuku Nomura Building":"/locations/tokyo/shinjuku-nomura-building",
+            "Shinjuku Oak City":"/locations/tokyo/shinjuku-oak-city",
+            "Sunshine City":"/locations/tokyo/sunshine-city",
+            "Servcorp Tokyo Big Sight - Ariake Frontier Building":"/locations/tokyo/servcorp-tokyo-big-sight-ariake-frontier-building"
+            },
+        "Yokohama":{
+            "TOC Minato Mirai":"/locations/yokohama/toc-minato-mirai"
+        },
+        "Osaka":{
+            "Umeda Hilton Plaza West Office Tower - New floor open!":"/locations/osaka/hilton-plaza-west-office-tower",
+            "Cartier Building - Shinsaibashi Plaza":"/locations/osaka/cartier-building-shinsaibashi-plaza",
+            "Edobori Center Building":"/locations/osaka/edobori-center-building"
+        },
+        "Nagoya":{
+            "Nagoya Lucent Tower":"/locations/nagoya/nagoya-lucent-tower",
+            "Nagoya Nikko Shoken Building":"/locations/nagoya/nagoya-nikko-shoken-building"
+        },
+        "Fukuoka":{
+            "Nof Hakata Ekimae Building":"/locations/fukuoka/nof-hakata-ekimae-building",
+            "Fukuoka Tenjin Fukoku Seimei Building":"/locations/fukuoka/fukuoka-tenjin-fukoku-seimei-building"
+        }
+    }
 
     
     $("#dealmaker").click( function(){
@@ -105,5 +142,80 @@ function myFunction(arr) {
     });
     $("#test-vo-signup").click(function(){
     	chrome.windows.create({ 'url':servcorpUrls.voSignUp, 'width':1000 } );
+    });
+    
+    var lang = '',
+        page = '';
+    
+    $('input').click(function(){
+        switch($(this).attr('val')){
+            case 'en':
+                lang = '/en';
+                break;
+            case 'ja':
+                lang = '/ja';
+                break;
+            case 'main':
+                 page = '';
+                break;
+            case 'so':
+                page = '/serviced-offices';
+                break;
+            case 'vo':
+                 page = '/virtual-offices';
+                break;
+            case 'shared':
+                page = '/private-shared-office';
+                break;
+            case 'meeting':
+                page = '/casual-meeting-rooms';
+                break;
+        }
+    });
+    
+    $('#location-all-btn').click(function(){
+        var en = document.getElementById('1');
+        for( area in locationLinks ){
+            for( floor in locationLinks[area] ) {
+                var url = '';
+                url = "http://www.servcorp.co.jp"+ lang + locationLinks[area][floor] + page;
+                chrome.tabs.create( { 'url':url, 'active':false, } );            
+            }
+        }
+    });
+    
+    $('#location-tokyo-btn').click(function(){
+          for( floor in locationLinks.Tokyo ) {
+            var url = "http://www.servcorp.co.jp" + locationLinks.Tokyo[floor];
+            chrome.tabs.create({ 'url':url, 'active':false, } );
+          }
+    });
+    
+    $('#location-yokohama-btn').click(function(){
+          for( floor in locationLinks.Yokohama ) {
+            var url = "http://www.servcorp.co.jp" + locationLinks.Yokohama[floor];
+            chrome.tabs.create({ 'url':url, 'active':false, } );
+          }
+    });
+    
+    $('#location-osaka-btn').click(function(){
+          for( floor in locationLinks.Osaka ) {
+            var url = "http://www.servcorp.co.jp" + locationLinks.Osaka[floor];
+            chrome.tabs.create({ 'url':url, 'active':false, } );
+          }
+    });
+    
+    $('#location-nagoya-btn').click(function(){
+          for( floor in locationLinks.Nagoya ) {
+            var url = "http://www.servcorp.co.jp" + locationLinks.Nagoya[floor];
+            chrome.tabs.create({ 'url':url, 'active':false, } );
+          }
+    });
+    
+    $('#location-fukuoka-btn').click(function(){
+          for( floor in locationLinks.Fukuoka ) {
+              var url = "http://www.servcorp.co.jp" + locationLinks.Fukuoka[floor];
+              chrome.tabs.create({ 'url':url, 'active':false, } );          
+          }
     });
 });

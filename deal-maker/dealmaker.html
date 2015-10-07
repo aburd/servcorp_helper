@@ -12,132 +12,191 @@
 <body>
     <div id="wrapper">
         <div id="inner">
-        <div id="left">
-            
-            <p class="label">Month</p>
-            <select autofocus="true" name="Floor 1" id="month">
-                <option value="">Select a month</option>
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-            </select>
-            
-            <p class="label">Floor 1</p>
-            <select name="Floor1" id="floor1">
-                <optgroup data-labelja="東京" label="Tokyo">
-                    <option ja="丸の内トラストタワー本館" data-url="">Marunouchi Trust Tower - Main</option>
-                    <option ja="丸の内郵船ビル" data-url="/locations/tokyo/marunouchi-yusen-building/serviced-offices/">Marunouchi Yusen Building</option>
-                    <option ja="大手町サンケイビル" data-url="/locations/tokyo/otemachi-tokyo-sankei-building/serviced-offices/">Otemachi Sankei Building</option>
-                    <option ja="日比谷セントラルビル" data-url="/locations/tokyo/hibiya-central-building/serviced-offices/">Hibiya Central Building</option>
-                    <option ja="城山トラストタワー" data-url="/locations/tokyo/shiroyama-trust-tower/serviced-offices/">Shiroyama Trust Tower</option>
-                    <option ja="青山パラシオタワー" data-url="/locations/tokyo/aoyama-palacio-tower/serviced-offices/">Aoyama Palacio Tower</option>
-                    <option ja="汐留芝離宮ビルディング" data-url="">Shiodome Shibarikyu Building</option>
-                    <option ja="日本橋ワカ末ビル" data-url="">Wakamatsu Building</option>
-                    <option ja="品川インターシティA棟" data-url="">Shinagawa Intercity Tower A</option>
-                    <option ja="恵比寿ガーデンプレイスタワー" data-url="">Yebisu Garden Place Tower</option>
-                    <option ja="新宿野村ビル" data-url="">Shinjuku Nomura Building</option>
-                    <option ja="新宿オークシティ日土地西新宿ビル" data-url="">Shinjuku Oak City</option>
-                    <option ja="池袋サンシャイン60" data-url="">Ikebukuro Sunshine 60</option>
-                    <option ja="有明フロンティアビルB棟" data-url="">Ariake Frontier Building Tower B</option>
-                </optgroup>
-                <optgroup data-labelja="横浜" label="Yokohama">
-                    <option ja="TOCみなとみらい" data-url="">TOC Minato Mirai</option>
-                </optgroup>
-                <optgroup data-labelja="大阪" label="Osaka">
-                    <option ja="梅田ヒルトンプラザウエストオフィスタワー" data-url="">Hilton Plaza West Office Tower</option>
-                    <option ja="江戸堀センタービル" data-url="">Edobori Center Building</option>
-                    <option ja="カルティエビル心斎橋プラザビル新館" data-url="">Cartier Building</option>
-                </optgroup>
-                <optgroup data-labelja="名古屋" label="Nagoya">
-                    <option ja="名古屋ルーセントタワー" data-url="">Nagoya Lucent Tower</option>
-                    <option ja="名古屋日興證券ビル" data-url="">Nagoya Nikko Shoken Building</option>
-                </optgroup>
-                <optgroup data-labelja="福岡" label="Fukuoka">
-                    <option ja="福岡天神フコク生命ビル" data-url="">Fukuoka Tenjin Fukoku Seimei Building</option>
-                    <option ja="NOF博多駅前ビル" data-url="">NOF Hakata Ekimae Building</option>
-                </optgroup>
-            </select>
-            
-            <p class="label">Floor 2</p>
-            <select name="Floor2" id="floor2">
-                <optgroup data-labelja="東京" label="Tokyo">
-                    <option ja="丸の内トラストタワー本館" data-url="">Marunouchi Trust Tower - Main</option>
-                    <option ja="丸の内郵船ビル" data-url="/locations/tokyo/marunouchi-yusen-building/serviced-offices/">Marunouchi Yusen Building</option>
-                    <option ja="大手町サンケイビル" data-url="/locations/tokyo/otemachi-tokyo-sankei-building/serviced-offices/">Otemachi Sankei Building</option>
-                    <option ja="日比谷セントラルビル" data-url="/locations/tokyo/hibiya-central-building/serviced-offices/">Hibiya Central Building</option>
-                    <option ja="城山トラストタワー" data-url="/locations/tokyo/shiroyama-trust-tower/serviced-offices/">Shiroyama Trust Tower</option>
-                    <option ja="青山パラシオタワー" data-url="/locations/tokyo/aoyama-palacio-tower/serviced-offices/">Aoyama Palacio Tower</option>
-                    <option ja="汐留芝離宮ビルディング" data-url="">Shiodome Shibarikyu Building</option>
-                    <option ja="日本橋ワカ末ビル" data-url="">Wakamatsu Building</option>
-                    <option ja="品川インターシティA棟" data-url="">Shinagawa Intercity Tower A</option>
-                    <option ja="恵比寿ガーデンプレイスタワー" data-url="">Yebisu Garden Place Tower</option>
-                    <option ja="新宿野村ビル" data-url="">Shinjuku Nomura Building</option>
-                    <option ja="新宿オークシティ日土地西新宿ビル" data-url="">Shinjuku Oak City</option>
-                    <option ja="池袋サンシャイン60" data-url="">Ikebukuro Sunshine 60</option>
-                    <option ja="有明フロンティアビルB棟" data-url="">Ariake Frontier Building Tower B</option>
-                </optgroup>
-                <optgroup data-labelja="横浜" label="Yokohama">
-                    <option ja="TOCみなとみらい" data-url="">TOC Minato Mirai</option>
-                </optgroup>
-                <optgroup data-labelja="大阪" label="Osaka">
-                    <option ja="梅田ヒルトンプラザウエストオフィスタワー" data-url="">Hilton Plaza West Office Tower</option>
-                    <option ja="江戸堀センタービル" data-url="">Edobori Center Building</option>
-                    <option ja="カルティエビル心斎橋プラザビル新館" data-url="">Cartier Building</option>
-                </optgroup>
-                <optgroup data-labelja="名古屋" label="Nagoya">
-                    <option ja="名古屋ルーセントタワー" data-url="">Nagoya Lucent Tower</option>
-                    <option ja="名古屋日興證券ビル" data-url="">Nagoya Nikko Shoken Building</option>
-                </optgroup>
-                <optgroup data-labelja="福岡" label="Fukuoka">
-                    <option ja="福岡天神フコク生命ビル" data-url="">Fukuoka Tenjin Fukoku Seimei Building</option>
-                    <option ja="NOF博多駅前ビル" data-url="">NOF Hakata Ekimae Building</option>
-                </optgroup>
-            </select>
-
-            <p>Virtual Old</p>
-            <input class="price" type="text" id="price0">    
-            <p>Virtual New</p>
-            <input class="price" type="text" id="price1">
-            <p>Communications Old</p>
-            <input class="price" type="text" id="price2">
-            <p>Communications New</p>
-            <input class="price" type="text" id="price3">
-            <p>Address Old</p>
-            <input class="price" type="text" id="price4">
-            <p>Address New</p>
-            <input class="price" type="text" id="price5">
-            <p>Meetings Old</p>
-            <input class="price" type="text" id="price6">
-            <p>Meetings New</p>
-            <input class="price" type="text" id="price7">  
-            <p><input type="button" id="submit" value="Submit"></p>
-
-        </div>
-
-        </div>
-        <div id="right"> 
-            <div id="box">
                 <p id="warning" style="margin: 20px;color:#FF8888"></p>
                 <p id="error" style="margin: 20px;color:#FF8888"></p>
+            <div id="left">
+                <p>
+                    <p class="label">Month</p>
+                </p>
+                <select autofocus="true" name="Floor 1" id="month">
+                    <option value="">Select a month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                
+                <p>
+                    <p class="label floorLabel">Floor 1</p>
+                    <p class="label floorLabel">Floor 2</p>
+                </p>
+                <select name="Floor1" class="floorSelect" id="floor1">
+                    <optgroup data-labelja="東京" label="Tokyo">
+                        <option ja="丸の内トラストタワー本館" data-url="">Marunouchi Trust Tower - Main</option>
+                        <option ja="丸の内郵船ビル" data-url="/locations/tokyo/marunouchi-yusen-building/serviced-offices/">Marunouchi Yusen Building</option>
+                        <option ja="大手町サンケイビル" data-url="/locations/tokyo/otemachi-tokyo-sankei-building/serviced-offices/">Otemachi Sankei Building</option>
+                        <option ja="日比谷セントラルビル" data-url="/locations/tokyo/hibiya-central-building/serviced-offices/">Hibiya Central Building</option>
+                        <option ja="城山トラストタワー" data-url="/locations/tokyo/shiroyama-trust-tower/serviced-offices/">Shiroyama Trust Tower</option>
+                        <option ja="青山パラシオタワー" data-url="/locations/tokyo/aoyama-palacio-tower/serviced-offices/">Aoyama Palacio Tower</option>
+                        <option ja="汐留芝離宮ビルディング" data-url="">Shiodome Shibarikyu Building</option>
+                        <option ja="日本橋ワカ末ビル" data-url="">Wakamatsu Building</option>
+                        <option ja="品川インターシティA棟" data-url="">Shinagawa Intercity Tower A</option>
+                        <option ja="恵比寿ガーデンプレイスタワー" data-url="">Yebisu Garden Place Tower</option>
+                        <option ja="新宿野村ビル" data-url="">Shinjuku Nomura Building</option>
+                        <option ja="新宿オークシティ日土地西新宿ビル" data-url="">Shinjuku Oak City</option>
+                        <option ja="池袋サンシャイン60" data-url="">Ikebukuro Sunshine 60</option>
+                        <option ja="有明フロンティアビルB棟" data-url="">Ariake Frontier Building Tower B</option>
+                    </optgroup>
+                    <optgroup data-labelja="横浜" label="Yokohama">
+                        <option ja="TOCみなとみらい" data-url="">TOC Minato Mirai</option>
+                    </optgroup>
+                    <optgroup data-labelja="大阪" label="Osaka">
+                        <option ja="梅田ヒルトンプラザウエストオフィスタワー" data-url="">Hilton Plaza West Office Tower</option>
+                        <option ja="江戸堀センタービル" data-url="">Edobori Center Building</option>
+                        <option ja="カルティエビル心斎橋プラザビル新館" data-url="">Cartier Building</option>
+                    </optgroup>
+                    <optgroup data-labelja="名古屋" label="Nagoya">
+                        <option ja="名古屋ルーセントタワー" data-url="">Nagoya Lucent Tower</option>
+                        <option ja="名古屋日興證券ビル" data-url="">Nagoya Nikko Shoken Building</option>
+                    </optgroup>
+                    <optgroup data-labelja="福岡" label="Fukuoka">
+                        <option ja="福岡天神フコク生命ビル" data-url="">Fukuoka Tenjin Fukoku Seimei Building</option>
+                        <option ja="NOF博多駅前ビル" data-url="">NOF Hakata Ekimae Building</option>
+                    </optgroup>
+                </select>
+
+                <select name="Floor2" class="floorSelect" id="floor2">
+                    <optgroup data-labelja="東京" label="Tokyo">
+                        <option ja="丸の内トラストタワー本館" data-url="">Marunouchi Trust Tower - Main</option>
+                        <option ja="丸の内郵船ビル" data-url="/locations/tokyo/marunouchi-yusen-building/serviced-offices/">Marunouchi Yusen Building</option>
+                        <option ja="大手町サンケイビル" data-url="/locations/tokyo/otemachi-tokyo-sankei-building/serviced-offices/">Otemachi Sankei Building</option>
+                        <option ja="日比谷セントラルビル" data-url="/locations/tokyo/hibiya-central-building/serviced-offices/">Hibiya Central Building</option>
+                        <option ja="城山トラストタワー" data-url="/locations/tokyo/shiroyama-trust-tower/serviced-offices/">Shiroyama Trust Tower</option>
+                        <option ja="青山パラシオタワー" data-url="/locations/tokyo/aoyama-palacio-tower/serviced-offices/">Aoyama Palacio Tower</option>
+                        <option ja="汐留芝離宮ビルディング" data-url="">Shiodome Shibarikyu Building</option>
+                        <option ja="日本橋ワカ末ビル" data-url="">Wakamatsu Building</option>
+                        <option ja="品川インターシティA棟" data-url="">Shinagawa Intercity Tower A</option>
+                        <option ja="恵比寿ガーデンプレイスタワー" data-url="">Yebisu Garden Place Tower</option>
+                        <option ja="新宿野村ビル" data-url="">Shinjuku Nomura Building</option>
+                        <option ja="新宿オークシティ日土地西新宿ビル" data-url="">Shinjuku Oak City</option>
+                        <option ja="池袋サンシャイン60" data-url="">Ikebukuro Sunshine 60</option>
+                        <option ja="有明フロンティアビルB棟" data-url="">Ariake Frontier Building Tower B</option>
+                    </optgroup>
+                    <optgroup data-labelja="横浜" label="Yokohama">
+                        <option ja="TOCみなとみらい" data-url="">TOC Minato Mirai</option>
+                    </optgroup>
+                    <optgroup data-labelja="大阪" label="Osaka">
+                        <option ja="梅田ヒルトンプラザウエストオフィスタワー" data-url="">Hilton Plaza West Office Tower</option>
+                        <option ja="江戸堀センタービル" data-url="">Edobori Center Building</option>
+                        <option ja="カルティエビル心斎橋プラザビル新館" data-url="">Cartier Building</option>
+                    </optgroup>
+                    <optgroup data-labelja="名古屋" label="Nagoya">
+                        <option ja="名古屋ルーセントタワー" data-url="">Nagoya Lucent Tower</option>
+                        <option ja="名古屋日興證券ビル" data-url="">Nagoya Nikko Shoken Building</option>
+                    </optgroup>
+                    <optgroup data-labelja="福岡" label="Fukuoka">
+                        <option ja="福岡天神フコク生命ビル" data-url="">Fukuoka Tenjin Fukoku Seimei Building</option>
+                        <option ja="NOF博多駅前ビル" data-url="">NOF Hakata Ekimae Building</option>
+                    </optgroup>
+                </select>
+
+
+                <p class="label">Virtual Old</p>
+                <input class="price" type="text" id="price0">
+                <input class="price" type="text" id="priceb0">    
+                <p class="label">Virtual New</p>
+                <input class="price" type="text" id="price1">
+                <input class="price" type="text" id="priceb1">
+                <p class="label">Communications Old</p>
+                <input class="price" type="text" id="price2">
+                <input class="price" type="text" id="priceb2">
+                <p class="label">Communications New</p>
+                <input class="price" type="text" id="price3">
+                <input class="price" type="text" id="priceb3">
+                <p class="label">Address Old</p>
+                <input class="price" type="text" id="price4">
+                <input class="price" type="text" id="priceb4">
+                <p class="label">Address New</p>
+                <input class="price" type="text" id="price5">
+                <input class="price" type="text" id="priceb5">
+                <p class="label">Meetings Old</p>
+                <input class="price" type="text" id="price6">
+                <input class="price" type="text" id="priceb6">
+                <p class="label">Meetings New</p>
+                <input class="price" type="text" id="price7">  
+                <input class="price" type="text" id="priceb7">
+
+                <div id="formButton">
+                    <input type="button" id="submit" value="Submit">
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- /left -->
+
+        <div id="right">
+
+            <div id="preview-offer"><strong><span id="preview-month-ja"></span>月限定スペシャル!</strong>
+                <div class="sc-content" id="promoin">
+                    <a href="#"><strong style="color: #494949;"><span id="floor1ja"></span></strong></a> または、<a href="#"><strong style="color: #494949;"><span id="floor2ja"></span></strong></a>を特別割引料金でお申込みいただけます。
+                </div>
+            </div>
+            <br>
+            <!-- stopped here -->
+            <div id="preview-deal" style="width: 211px"><strong><span class="preview-month">7</span>月限定オファー</strong>
+                <div id="deal-table">                 
+                    <table>
+                        <tr>
+                            <td>バーチャルオフィス<br /><span class="oldprice" id="prev-old-vo">¥5</span> <strong>¥5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>電話秘書代行 <span class="oldprice">¥5</span> <strong>¥5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>貸し住所 <span class="oldprice">¥5</span> <strong>¥5</strong></td>
+                        </tr>
+                        <tr>
+                            <td>貸会議室 <span class="oldprice">¥5</span> <strong>¥5</strong></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="bottom">
+            <div class="tabs">
+                <div class="tab activeTab" id="jaTab">Japanese</div>
+                <div class="tab" id="enTab">English</div>
+            </div>
+            <div id="jaPage">
+
                 <h2>日本語</h2>
                 <p id="output_jp">Result goes here</p>
                 <h2>日本語ディール</h2>
+                <p id="floor1ja">Floor 1</p>
                 <p id="deal_jp">Result goes here</p>
-
+                <p id="floor2ja">Floor 2</p>
+                <p id="deal_jpb">Result goes here</p>
+                
+            </div>
+            <div id="engPage">
                 <h2>ENG</h2>
                 <p id="output_en">Result goes here</p>
                 <h2>ENG Deal</h2>
+                <p id="floor1en">Floor 1</p>
                 <p id="deal_en">Result goes here</p>
-                
+                <p id="floor2en">Floor 2</p>
+                <p id="deal_enb">Result goes here</p>
             </div>
         </div>
 
