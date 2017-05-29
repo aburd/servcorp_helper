@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    code {
+      padding: 20px 0;
+      background: #333;
+      color: #FF0DFF;
+      font-size: 1.5em;
+      display: block;
+      width: 70%;
+      overflow: scroll;
+    }
+    .func {
+      margin-left: 20px
+    }
+    .func desc {
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+<h1>Useful funcs</h1>
+<div class="func">
+  <h3>addTagToEach = (str, elName, divider, isStr)</h3>
+  <p class="desc">
+    //Add li tag to each thing in a string <br>
+    //str:string. text to mod [, elName: string divider:string - how to split, isStr:bool def=string return as string or arr ]
+  </p>
+</div>
+<div class="func">
+  <h3>toCamel = (str)</h3>
+  <p class="desc">
+    //Return string to camel <br>
+    //str:string [req]. text to camelcase
+  </p>
+</div>
+<div class="func">
+  <h3>Date Boilerplate</h3>
+  <p class="desc">
+    // For making dates
+  </p>
+  <code>
+    <pre>
+      var d = new Date();
+      var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      var theMonthEn = month[d.getMonth()];
+      var theMonthJa = d.getMonth() + 1;
+    </pre>
+  </code>
+</div>
+<h1>Monthly Deal Funcs</h1>
+<div class="func">
+  <h3>makeDealBox(codes, locObj)</h3>
+  <p class="desc">
+    // Return HTML string for deal boxes<br>
+    //codes:array/string [req]. location codes to include in result. As an array of strings will return the list style for VO pages. String will return location page style.<br>
+    //locObj:object [req]. object of locations for data
+  </p>
+</div>
+<div class="func">
+  <h3>makeDealBoxJa(codes, locObj)</h3>
+  <p class="desc">
+    // Same as above, but returns results for JA pages
+  </p>
+</div>
+
+<script src="useful-funcs.js"></script>
+
+</body>
+</html>

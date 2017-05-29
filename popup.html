@@ -6,7 +6,7 @@
     <script src="jquery-1.11.2.min.js"></script>
         <script src="background.js"></script>
     <style>
-      
+
       html {
         width:180px;
       }
@@ -54,13 +54,20 @@
       }
 
     </style>
-    
+
   </head>
-  
+
 
   <body>
-    
+
     <div id="status">
+
+<!--
+       <div class="section">
+        <p>Change Lang</p>
+        <div class="servcorp-btn" id="changeLang">EN/JA</div>
+      </div>
+-->
 
       <div class="section">
         <p>Web Form Tester</p>
@@ -68,30 +75,61 @@
         <div class="servcorp-btn" id="test-vo-signup">VO</div>
         <div class="servcorp-btn" id="test-local-btn">Local</div>
       </div>
+
+      <div class="section">
+        <p>Umbraco Edits</p>
+        <div class="servcorp-btn" id="umbraco-all-btn">All</div>
+      </div>
+
+
       <div class="section">
         <p>Location Pages</p>
         <form action="">
-        <input type="radio" name="lang" id="1" val="en">EN<input type="radio" id="2" name="lang" val="ja">JA
-        <input type="radio" name="page" val="main">Main<br>
-        <input type="radio" name="page" val="so">SO<br>
-        <input type="radio" name="page" val="vo">VO<br>
-        <input type="radio" name="page" val="shared">Shared<br>
-        <input type="radio" name="page" val="meeting">Meeting<br>
+        <p style="border: 1px solid #ddd; padding: 3px;">
+            <input type="radio" name="lang" id="1" val="en">EN<input type="radio" id="2" name="lang" val="ja">JA
+        </p>
+        <p>
+            <input type="radio" name="page" val="main">Main<br>
+            <input type="radio" name="page" val="so">SO<br>
+            <input type="radio" name="page" val="vo">VO<br>
+            <input type="radio" name="page" val="meeting">Meeting
+            <label for="Test">
+            	<input type="checkbox" id="test-check">Test?
+            </label>
+        </p>
         </form>
-        <div class="servcorp-btn" id="location-all-btn">All</div>                
+        <div class="servcorp-btn" id="location-all-btn">All</div>
         <div class="servcorp-btn" id="location-tokyo-btn">Tokyo</div>
         <div class="servcorp-btn" id="location-yokohama-btn">Yokohama</div>
         <div class="servcorp-btn" id="location-osaka-btn">Osaka</div>
         <div class="servcorp-btn" id="location-nagoya-btn">Nagoya</div>
         <div class="servcorp-btn" id="location-fukuoka-btn">Fukuoka</div>
+        <div class="servcorp-btn" id="coworking">Coworking</div>
+        <div class="servcorp-btn" id="location-all-btn-test">Test Btn</div>
       </div>
+
+      <div class="section">
+        <p>Locations</p>
+        <div class="servcorp-btn" id="locations">Locations</div>
+      </div>
+
+      <div class="section">
+        <p>Backups</p>
+        <div class="servcorp-btn" id="backups">Start</div>
+      </div>
+      <div class="section">
+        <p>Pictures</p>
+        <div class="servcorp-btn" id="pictures">Start</div>
+      </div>
+
+      <div class="section">
+        <p>Useful Functions</p>
+        <div class="servcorp-btn" id="useful">Funcs</div>
+      </div>
+
       <div class="section">
         <p>Monthly Deals</p>
         <div class="servcorp-btn" id="dealmaker">Dealmaker</div>
-      </div>
-      <div class="section">
-        <p>Monthly Updates</p>
-        <div class="servcorp-btn" id="mailgen">Mailgen</div>
       </div>
       <div class="section">
         <p>Floor Information</p>
@@ -101,9 +139,8 @@
           <p id="output"></p>
       </div>
     </div>
-    
+
     <img id="image-result" hidden>
 
   </body>
 </html>
-

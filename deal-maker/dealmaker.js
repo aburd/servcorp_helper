@@ -281,6 +281,7 @@ $(document).ready( function(){
             } else if (check(x)===true) {
            // check to see that the input has commas
                 $('input#price'+i).val(addComma(x)); // no commas? add them
+                $('input#priceb'+i).val(addComma(x));
             }
 
         }
